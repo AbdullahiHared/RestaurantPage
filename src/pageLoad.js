@@ -1,7 +1,9 @@
-
 //initial page Loader
 export const initialPageLoad = () => {
     let divContent = document.querySelector('#content');
+    let currentTitle = document.querySelector('#currentTitle');
+    divContent.textContent = "";
+    currentTitle.textContent = "Indulge in Our Delicious Selections";
 
     const meals = [
         {
@@ -17,13 +19,29 @@ export const initialPageLoad = () => {
             imgSrc: "/images/salmonWithSalad.avif"
         },
         {
-            name : "Special Egg With Vegetables and beef",
+            name: "Special Egg With Vegetables and beef",
             imgSrc: "/images/specialEggWithVeg.avif",
         },
         {
-            name : "Veggie Yogurt Bowl",
+            name: "Veggie Yogurt Bowl",
             imgSrc: "/images/vegYogurtBowl.avif",
-        }
+        },
+        {
+            name: "Chicken Salad",
+            imgSrc: '/images/chickenSalad.avif',
+        },
+        {
+            name: "Fish Butter Masala",
+            imgSrc: "/images/fishButter.avif",
+        },
+        {
+            name: "Chicken Salad",
+            imgSrc: '/images/chickenSalad.avif',
+        },
+        {
+            name: "Fish Butter Masala",
+            imgSrc: "/images/fishButter.avif",
+        },
     ];
 
     meals.forEach((meal) => {
@@ -32,8 +50,9 @@ export const initialPageLoad = () => {
         mealInfo.innerHTML = `
         <img src="${meal.imgSrc}" alt="${meal.name}" width="30%">
         <p class = "mealDescription">${meal.name}</p>`;
-        console.log(meal.imgSrc);
         divContent.appendChild(mealInfo);
     })
 }
+
+
 

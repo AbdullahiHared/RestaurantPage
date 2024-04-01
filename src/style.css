@@ -1,0 +1,77 @@
+/* Resetting default styles for body */
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Times New Roman";
+}
+
+/* Styling for the header */
+header {
+    padding: 10px;
+    background: rgba(94, 92, 92, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the main content area */
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Styling for images */
+img {
+    width: 280px;
+    height: 290px;
+    border-radius: 10px;
+}
+
+/* Styling for buttons */
+button {
+    border: none;
+    padding: 10px;
+    background: black;
+    color: white;
+    width: 80px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Hover effect for buttons */
+button:focus {
+    transition: 0.9s;
+    border: none;
+    border-bottom: 2px solid black;
+    border-bottom-right-radius: 20px;
+    background: white;
+    color: black;
+}
+.mealDescription {
+    font-weight:bold;
+}
+
+.aboutInfo, .service{
+    width:60%;
+    background: rgb(94, 92, 92);
+    color:white;
+    padding:20px;
+}
+
+.service {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:20px;
+    border-radius:10px;
+    width:50%;
+}
+
+
+
