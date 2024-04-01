@@ -4,13 +4,13 @@
     background: repeating-linear-gradient(red, orange 50px);
     clip-path: polygon(
             50% 0%,
-            60% 40%,
-            100% 50%,
+            20% 40%,
+            20% 60%,
             60% 60%,
-            50% 100%,
+            20% 50%,
             40% 60%,
-            0% 50%,
-            40% 40%
+            0% 40%,
+            20% 40%
     );
     animation: 4s poly infinite alternate ease-in-out;
     margin: 10px auto;
