@@ -1,1 +1,2 @@
-console.log("Hello Test")
+import {initialPageLoad} from "./pageLoad.js";
+initialPageLoad();
