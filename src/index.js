@@ -1,6 +1,7 @@
 import {initialPageLoad} from "./pageLoad.js";
 import {aboutContent} from "./about.js";
 import {homePage} from "./home.js";
+import './style.css';
 
 homePage();
 

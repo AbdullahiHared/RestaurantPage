@@ -13,11 +13,24 @@ module.exports = {
         }),
     ],
     module: {
+
         rules: [
+
             {
-                test: /\.css$/,
+
+                test: /\.css$/i,
+
                 use: ['style-loader', 'css-loader'],
+
             },
+            {
+
+                test: /\.(png|svg|avif|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+
+            },
+
         ],
+
     },
 };
